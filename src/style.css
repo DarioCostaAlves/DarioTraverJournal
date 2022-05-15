@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;    
+}
+
+body {
+    margin: 0;    
+    font-family: 'Poppins', sans-serif;            
+    color: #fff;
+}
+
+nav {
+    height: 70px;
+    display: flex;    
+    padding: 20px 36px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    background-color: #F55A5A;    
+    align-items: center;     
+    justify-content: center;       
+}
+
+.travelCard{
+    display: flex; 
+    margin: 20px;
+    flex-direction: row;    
+    color: #000;    
+    height: 200px;
+}
+
+.card-pic{
+    width: 130px;
+    height: 180px;
+    border-radius: 12px;    
+}
+
+.card-right{
+    line-height: 15px;        
+}
