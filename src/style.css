@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box;    
+    box-sizing: border-box;   
+    
 }
 
 body {
@@ -15,23 +16,55 @@ nav {
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
     background-color: #F55A5A;    
     align-items: center;     
-    justify-content: center;       
+    justify-content: center;              
 }
 
-.travelCard{
-    display: flex; 
-    margin: 20px;
-    flex-direction: row;    
-    color: #000;    
-    height: 200px;
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;    
+}
+
+.card {    
+    font-size: 10px;
+    flex: 0 0 auto;        
+    display: flex;        
+    color: #000;     
+    position: relative;
 }
 
 .card-pic{
     width: 130px;
-    height: 180px;
+    height: 200px;
     border-radius: 12px;    
 }
 
+.card-left{
+    padding: 10px 50px;
+}
+
 .card-right{
-    line-height: 15px;        
+    line-height: 15px;   
+    padding: 50px 0px;    
+    margin-right: 20px;
+}
+
+.card-country{
+    margin-right: 10px;
+}
+
+.card-maps{
+    color: gray;
+}
+
+@media screen and (min-width: 800px) {
+   .card{
+       display: inline-block;
+   }
+    .card-right{
+        line-height: 15px;   
+        padding: 10px 0px;    
+        padding-left: 60px;
+        margin-right: 20px;
+    }
 }
